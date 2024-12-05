@@ -1,0 +1,98 @@
+.main-home {
+    padding: 0px 165px;
+    display: flex;
+    height: calc(100vh - 300px);
+    align-items: flex-end;
+    margin-top: 40px;
+}
+.home-text-section {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    text-align: left;
+}
+.home-btn-section {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.home-btn {
+    color: var(--blue-900);
+    background-color: white;
+    border-radius: 50%;
+    border: transparent;
+    text-align: center;
+    width: 272px;
+    height: 272px;
+    font-size: var(--desk-size-4);
+    font-family: var(--desk-fam-4);
+}
+.home-btn:hover {
+    box-shadow: 0px 0px 0px 88px rgba(255, 255, 255, 0.1);
+}
+.home-pretitle {
+    font-weight: normal;
+    font-family: var(--desk-fam-5);
+    font-size: var(--desk-size-5);
+}
+.home-title {
+    margin: 0;
+    font-weight: normal;
+    font-family: var(--desk-fam-1);
+    font-size: var(--desk-size-1);
+    line-height: normal;
+}
+.home-p {
+    font-family: var(--desk-fam-9);
+    font-size: var(--desk-size-9);
+    line-height: 180%;
+}
+
+/*TABLET 1130px
+-----------------------------------------------------------------------------------------------*/
+@media screen and (max-width: 1130px) {
+    .main-home {
+        padding: 40px 80px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: unset;
+    }
+    .home-text-section {
+        text-align: center;
+        width: 100%;
+    }
+    .home-btn-section {
+        margin-top: 20px;
+        justify-content: center;
+        width: 100%;
+        margin-top: 90px;
+    }
+    .home-p {
+        font-size: var(--tab-size-9);
+    }
+}
+
+/*MOBILE 375px
+-----------------------------------------------------------------------------------------------*/
+@media screen and (max-width: 590px) {
+    .main-home {
+        padding: 40px 20px;
+    }
+    .home-p {
+        font-size: var(--mob-size-9);
+    }
+    .home-pretitle {
+        font-family: var(--desk-fam-6);
+        font-size: var(--mob-size-5);
+    }
+    .home-title {
+        font-size: var(--mob-size-1);
+    }
+    .home-btn {
+        width: 144px;
+        height: 144px;
+        font-size: var(--mob-size-4);
+    }
+}

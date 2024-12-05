@@ -1,3 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
+
+:root {
+  --bg-image-desk: none;
+  --bg-image-tab: none;
+  --bg-image-mob: none;
+/* txt-color */
+  --blue-300: rgb(208, 214, 249);
+  --blue-900: rgb(11, 13, 23);
+/*txt presets*/
+/*desktop*/
+--desk-fam-1: 'Bellefair', serif;
+--desk-size-1: 144px;
+--desk-ilane-1: 0;
+
+--desk-fam-2: 'Bellefair', serif;
+--desk-size-2: 96px;
+--desk-ilane-2: 0;
+
+--desk-fam-3: 'Bellefair', serif;
+--desk-size-3: 56px;
+--desk-ilane-3: 0;
+
+--desk-fam-4: 'Bellefair', serif;
+--desk-size-4: 32px;
+--desk-ilane-4: 0;
+
+--desk-fam-5: 'Barlow Condensed', serif;
+--desk-size-5: 28px;
+--desk-space-5: 4px;
+--desk-ilane-5: 0;
+
+--desk-fam-6: 'Bellefair', serif;
+--desk-size-6: 28px;
+--desk-space-6: 0;
+--desk-ilane-6: 0;
+
+--desk-fam-7: 'Barlow Condensed', sans-serif;
+--desk-size-7: 14px;
+--desk-space-7: 2px;
+--desk-ilane-7: 0;
+
+--desk-fam-8: 'Barlow Condensed', sans-serif;
+--desk-size-8: 16px;
+--desk-ilane-8: 0;
+--desk-space-8: 2px;
+
+--desk-fam-9: 'Barlow Condensed', sans-serif;
+--desk-size-9: 18px;
+--desk-ilane-9: 0;
+
+/*tablet*/
+--tab-size-2: 80px;
+
+--tab-size-3: 40px;
+
+--tab-size-4: 24px;
+
+--tab-size-5: 20px;
+
+--tab-size-9: 16px;
+
+/*mobile*/
+--mob-size-1: 80px;
+
+--mob-size-2: 56px;
+
+--mob-size-3: 24px;
+
+--mob-size-4: 18px;
+
+--mob-size-6: 16px;
+
+--mob-size-8: 14px;
+
+--mob-size-9: 15px;
+}
+body, html {
+  width: 100%;
+  height: 100%;
+}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +87,48 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: var(--bg-image-desk);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: var(--blue-300);
+}
+body * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h1 {
+  color: rgb(255, 255, 255);
+}
+button:hover {
+  cursor: pointer;
+}
+@media screen and (max-width: 1130px) {
+  body, html {
+    background-attachment: fixed;
+  }
+}
+@media screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+    background-image: var(--bg-image-tab);
+  }
+}
+@media screen and (max-width: 375px) {
+  body {
+    
+    background-image: var(--bg-image-mob);
+  }
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.loading {
+  font-family: var(--desk-fam-3);
+  font-size: var(--desk-size-3);
+}
+
+
