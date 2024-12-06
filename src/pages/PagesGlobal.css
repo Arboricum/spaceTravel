@@ -273,6 +273,9 @@
         flex-direction: column;
         gap: 24px;
     }
+    .pageContentTxt-right, .pageContentTxt-left {
+        padding: 0 20px;
+    }
     .role, .terminology {
         font-size: var(--mob-size-4);
     }
